@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+dist/
+.env
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Mongo local data
+03-pokedex/mongo/
+
+# Logs
+logs
+*.log
+
+# IDEs/OS
+.vscode/
+.DS_Store
+Thumbs.db
