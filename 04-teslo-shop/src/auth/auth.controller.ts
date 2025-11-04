@@ -10,6 +10,7 @@ import {
   Req,
   SetMetadata,
 } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
 import { AuthService } from './auth.service';
 import { CreateUserDto, LoginUserDto } from './dto';
 import { AuthGuard } from '@nestjs/passport';
@@ -18,6 +19,8 @@ import { User } from './entities/user.entity';
 import { Raw } from 'typeorm';
 import { UserRoleGuard } from './guards/user-role/user-role.guard';
 import { ValidRoles } from './interfaces';
+
+@ApiTags('Auth')
 
 @Controller('auth')
 export class AuthController {
